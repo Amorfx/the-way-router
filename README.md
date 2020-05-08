@@ -46,6 +46,7 @@ In the router configuration before instance you can passed routes configuration.
 * regex : the regex for add_rewrite_rule function of WordPress
 * path : the "clean" path of the route wich you can define custom route param
 * action : the controller and action to fire if the router matched route (Controller@action)
+* private : protect the route, only authentificate user can go to the route (otherwise it return 404)
 
 There is no 'http method' key. It's in the controller action fired that you should check which HTTP method is used.
 
